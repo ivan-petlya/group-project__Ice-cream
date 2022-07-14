@@ -1,3 +1,11 @@
+// Utilities
+
+@import './utilities/mixins';
+@import './utilities/colors';
+@import './utilities/variables';
+@import './utilities/vissually-hidden';
+
+
 // Basic styles
 @import './basic/container';
 @import './basic/reset';
@@ -15,9 +23,3 @@
 @import './components/contacts';
 @import './components/footer';
 
-// Utilities
-
-@import './utilities/mixins';
-@import './utilities/colors';
-@import './utilities/variables';
-@import './utilities/vissually-hidden';
