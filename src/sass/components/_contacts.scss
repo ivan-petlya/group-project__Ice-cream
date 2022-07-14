@@ -1,0 +1,78 @@
+.section-contacts {
+  padding-top: 85px;
+  padding-bottom: 56px;
+  background: linear-gradient(180deg, #fff 10%, #fff5f6 0 100%);
+  &__container {
+  }
+  &__list {
+    gap: 20px;
+  }
+  &__item {
+    background-color: #fff;
+    box-shadow: 0 8px 30px rgb(212 20 67 / 10%);
+    border-radius: 24px;
+    @media screen and {
+    }
+  }
+  &__type-shop,
+  &__type-shop-even {
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #f0d1a5;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.83;
+    text-align: center;
+    display: inline-flex;
+    padding: 5px 25px;
+  }
+  &__type-shop-even {
+    background-color: #c2e297;
+  }
+  &__city {
+    font-family: DM Sans;
+    color: #000000;
+    letter-spacing: 0.04em;
+    font-weight: 500;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  &__description {
+    margin-top: 8px;
+    font-size: 12;
+    color: #907e82;
+    line-height: 1.5;
+  }
+  &__contacts-list-item {
+  }
+  &__phone {
+    text-decoration: none;
+    font-size: 12px;
+    color: #907e82;
+  }
+  &__mail {
+    text-decoration: none;
+    font-size: 12px;
+    color: #907e82;
+  }
+  &__contacts-list {
+  }
+}
+.work-schedule-list {
+  border-top: 1px;
+  border-bottom: 1px;
+  padding: 25px 0px;
+  border-color: #e31010;
+  &__item {
+  }
+  &__working-day {
+    font-style: medium;
+    font-size: 12px;
+    line-height: 1.83;
+  }
+  &__working-time {
+    font-size: 12px;
+    color: #ffa5ba;
+  }
+}
