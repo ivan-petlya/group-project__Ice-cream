@@ -23,14 +23,15 @@
 }
 
 .modal {
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
   position: absolute;
   top: 50%;
   left: 50%;
   margin: 0 auto;
   padding: 40px;
-  max-width: 450px;
   width: 95vw;
-  max-height: 652px;
   max-height: 100vh;
   overflow: scroll;
   background-color: $primary-bg-color;
@@ -42,22 +43,6 @@
     transform: translate(-50%, -50%) scale(0.8);
     transition: transform $main-effect;
   }
-
-  @include maxMedia($min) {
-    width: 100%;
-    position: fixed;
-    min-width: 320px;
-  }
-  @include minMedia($tab) {
-    border-radius: 10px;
-    overflow: auto;
-    // overflow: unset;
-    height: auto;
-  }
-  @include minMedia($desk) {
-    max-width: 528px;
-    // max-height: 664px;
-  }
 }
 .modal-close {
   position: absolute;
@@ -68,8 +53,6 @@
   stroke: $primary-color;
   background-color: inherit;
   @include centeredFlex();
-  // flex-direction: column;
-  // border: none;
 }
 .modal-icon {
   transition: stroke $main-effect, transform $main-effect;
@@ -194,14 +177,17 @@
     transition: border $main-effect, background-color $main-effect,
       box-shadow $main-effect;
   }
+  .form-policy-check:focus + & {
+    border: 1px solid $primary-color;
+  }
 }
 
 .form-policy-check:checked + .form-check-text .form-policy-icon {
-  fill: $secondary-color;
+  fill: $bg-color;
 }
 .form-button {
   background-color: $primary-color;
-  color: $secondary-color;
+  color: $bg-color;
   min-width: 200px;
   min-height: 44px;
   padding: 0 30px;
@@ -218,7 +204,7 @@
   &:hover,
   &:focus {
     background-color: $primary-color;
-    color: $secondary-color;
+    color: $bg-color;
     box-shadow: $contacts-shadow;
   }
 }
