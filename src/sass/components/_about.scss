@@ -1,0 +1,14 @@
+.section-about {
+    padding-top: 125px;
+    padding-bottom: 20px;
+  
+    background-color: rgb(255, 245, 246);
+  
+    background-repeat: no-repeat;
+    background-size: contain;
+    // background-position: 0px 720px;
+
+    @media (max-width: 767px) {
+        background-image: url('../images/about/milk-m.png');
+}
+}
