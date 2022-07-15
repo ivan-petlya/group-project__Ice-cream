@@ -1,5 +1,5 @@
 @mixin mq($range) {
-  $mobile: 480px;
+  $mobile: 320px;
   $tablet: 768px;
   $desktop: 1200px;
   @if $range == mobile-only {
@@ -37,3 +37,22 @@
     }
   }
 }
+
+/* Example */
+
+// .footer__wrapper {
+//   margin-left: auto;
+//   margin-right: auto;
+//   @include mq(tablet) {
+//     display: flex;
+//     justify-content: space-around;
+//     width: 100%;
+//   }
+//   @include mq(desktop) {
+//     display: flex;
+//     flex-direction: row;
+//   }
+//   @include mq(mobile) {
+//     margin-bottom: 60px;
+//   }
+// }
