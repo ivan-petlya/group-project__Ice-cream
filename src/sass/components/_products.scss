@@ -88,13 +88,13 @@
 }
 
 .products-list__item:nth-child(1) {
-  background: #ffb8ca;
+  background-color: #ffb8ca;
 }
 .products-list__item:nth-child(2) {
-  background: #f0d1a5;
+  background-color: #f0d1a5;
 }
 .products-list__item:nth-child(3) {
-  background: #c2e297;
+  background-color: #c2e297;
 }
 
 .products-ice-cream::after {
@@ -104,22 +104,23 @@
   left: 50%;
   top: 0;
   transform: translate(-50%, -50%);
-  background: url("/src/images/products/mobile/ice-cream-mobile-x1.png") no-repeat;
+  background-image: url("../images/products/mobile/ice-cream-mobile-x1.png");
+  background-size: contain;
   @include mq(mobile) {
     @include mq(retina) {
-      background: url("/src/images/products/mobile/ice-cream-mobile-x2.png") no-repeat;
+      background-image: url("../images/products/mobile/ice-cream-mobile-x2.png");
     }
   }
   @include mq(tablet) {
-    background: url("/src/images/products/tablet/ice-cream-tablet-x1.png") no-repeat;
+    background-image: url("../images/products/tablet/ice-cream-tablet-x1.png");
     @include mq(retina) {
-      background: url("/src/images/products/tablet/ice-cream-tablet-x2.png") no-repeat;
+      background-image: url("../images/products/tablet/ice-cream-tablet-x2.png");
     }
   }
   @include mq(desktop) {
-    background: url("/src/images/products/ice-cream-desktop-x1.png") no-repeat;
+    background-image: url("../images/products/ice-cream-desktop-x1.png");
     @include mq(retina) {
-      background: url("/src/images/products/ice-cream-desktop-x2.png") no-repeat;
+      background-image: url("../images/products/ice-cream-desktop-x2.png");
     }
   }
 }
@@ -128,23 +129,48 @@
   content: "";
   position: absolute;
   background-repeat: no-repeat;
-  background: url("/src/images/products/mobile/ice-coffee-mobile-x1.png") no-repeat;
+  background-size: contain;
+  background-image: url("../images/products/mobile/ice-coffee-mobile-x1.png");
+  @include mq(mobile) {
+    @include mq(retina) {
+      background-image: url("../images/products/mobile/ice-coffee-mobile-x2.png");
+    }
+  }
   @include mq(tablet) {
-    background: url("/src/images/products/tablet/ice-coffee-tablet-x1.png") no-repeat;
+    background-image: url("../images/products/tablet/ice-coffee-tablet-x1.png");
+    @include mq(retina) {
+      background-image: url("../images/products/tablet/ice-coffee-tablet-x2.png");
+    }
   }
   @include mq(desktop) {
-    background: url("/src/images/products/ice-coffee-desktop-x1.png") no-repeat;
+    background-image: url("../images/products/ice-coffee-desktop-x1.png");
+    @include mq(retina) {
+      background-image: url("../images/products/ice-coffee-desktop-x2.png");
+    }
   }
 }
 
 .products-ice-milkshakes::after {
   content: "";
   position: absolute;
-  background: url("/src/images/products/mobile/ice-milkshakes-mobile-x1.png") no-repeat;
+  background-size: contain;
+  @include mq(mobile) {
+    background-image: url("../images/products/mobile/ice-milkshakes-mobile-x1.png");
+    @include mq(retina) {
+      background-image: url("../images/products/mobile/ice-milkshake-mobile-x2.png");
+    }
+  }
   @include mq(tablet) {
-    background: url("/src/images/products/tablet/ice-milkshakes-tablet-x1.png") no-repeat;
+    background-image: url("../images/products/tablet/ice-milkshakes-tablet-x1.png");
+    @include mq(retina) {
+      background-image: url("../images/products/tablet/ice-milkshakes-tablet-x2.png");
+    }
+
     @include mq(desktop) {
-      background: url("/src/images/products/ice-milkshakes-desktop-x1.png") no-repeat;
+      background-image: url("../images/products/ice-milkshakes-desktop-x1.png");
+      @include mq(retina) {
+        background-image: url("../images/products/ice-milkshakes-desktop-x2.png");
+      }
     }
   }
 }
