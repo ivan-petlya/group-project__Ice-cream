@@ -183,23 +183,25 @@
   margin-right: 8.28px;
   @include centeredFlex();
   transition: transform $main-effect;
-  transition: border $main-effect, background-color $main-effect, box-shadow $main-effect;
+  transition: border $main-effect, background-color $main-effect,
+    box-shadow $main-effect;
 
   .form-policy-check:checked + & {
     border: 1px solid $primary-color;
     border-radius: 4px;
     background-color: $primary-color;
     box-shadow: none;
-    transition: border $main-effect, background-color $main-effect, box-shadow $main-effect;
+    transition: border $main-effect, background-color $main-effect,
+      box-shadow $main-effect;
   }
 }
 
 .form-policy-check:checked + .form-check-text .form-policy-icon {
-  // fill: $secondary-color;
+  fill: $bg-color;
 }
 .form-button {
   background-color: $primary-color;
-  // color: $secondary-color;
+  color: $bg-color;
   min-width: 200px;
   min-height: 44px;
   padding: 0 30px;
@@ -216,7 +218,7 @@
   &:hover,
   &:focus {
     background-color: $primary-color;
-    // color: $secondary-color;
+    color: $bg-color;
     box-shadow: $contacts-shadow;
   }
 }
