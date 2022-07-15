@@ -9,10 +9,13 @@
         width: 768px;
         height: 216px;
     }
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+        height: 341px;
+    }
 }
 
 .gallery__item {
-    display: block;
     position: absolute;
     width: 43.59px;
     height: 43.86px;
@@ -33,15 +36,24 @@
         height: 105.14px;
         border-radius: 20px;
     }
+
+    @media screen and (min-width: 1200px) {
+        width: 138px;
+        height: 138.68px;
+    }
 }
 
 .gallery__item1 {
     top: 8px;
-    left: -2;
+    left: 0;
 
     @media screen and (min-width: 768px) {
         top: -80px;
         left: 0;
+    }
+    @media screen and (min-width: 1200px){
+        top: 54px;
+        left: 93px;
     }
 }
 
@@ -52,7 +64,11 @@
     @media screen and (min-width: 768px) {
         top: -121px;
         left: 109px;
-        }       
+    }     
+    @media screen and (min-width: 1200px){
+        top: 0;
+        left: 239px;
+    }  
 }
 
 .gallery__item3 {
@@ -63,6 +79,10 @@
         top: -10px;
         left: 109px;
     }
+    @media screen and (min-width: 1200px){
+        top: 145px;
+        left: 239px;
+    } 
 }
 
 .gallery__item4 {
@@ -82,6 +102,12 @@ left: 92px;
     top: -188px;
     left: 219px;
 }
+@media screen and (min-width: 1200px) {
+    width: 283px;
+    height: 283.34px;
+    top: -89px;
+    left: 385px;
+    }
 }
 
 .gallery__item5 {
@@ -92,6 +118,10 @@ left: 92px;
         top: 34px;
         left: 219px;
     }
+    @media screen and (min-width: 1200px){
+        top: 202px;
+        left: 385px;
+    } 
 }
 
 .gallery__item6 {
@@ -101,6 +131,10 @@ left: 92px;
     @media screen and (min-width: 768px) {
         top: -113px;
         left: 439px;
+    }
+    @media screen and (min-width: 1200px){
+        top: 11px;
+        left: 675px;
     }
 }
 
@@ -112,6 +146,10 @@ left: 92px;
         top: -2px;
         left: 439px;
     }
+    @media screen and (min-width: 1200px){
+        top: 157px;
+        left: 675px;
+    }
 }
 
 .gallery__item8 {
@@ -121,6 +159,10 @@ left: 92px;
     @media screen and (min-width: 768px) {
         top: -138px;
         left: 551px;
+    }
+    @media screen and (min-width: 1200px){
+        top: -22px;
+        left: 822px;
     }
 }
 
@@ -132,13 +174,22 @@ left: 92px;
         top: -27px;
         left: 551px;
     }
+    @media screen and (min-width: 1200px){
+        top: 125px;
+        left: 822px;
+    }
 }
 
 .gallery__item10 {
     top: 20px;
     left: 276px;
+    
     @media screen and (min-width: 768px) {
         top: -71px;
         left: 662px;
+    }
+    @media screen and (min-width: 1200px) {
+        top: 67px;
+        left: 968px;
     }
 }
