@@ -135,32 +135,15 @@
 
   &__button {
     height: 44px;
-<<<<<<< Updated upstream
-=======
-    padding-left: 30px;
-    padding-right: 20px;
->>>>>>> Stashed changes
     display: flex;
     justify-content: center;
     align-items: center;
     line-height: 1.31;
     font-size: 16px;
-    // font-weight: 700;
+    font-weight: 700;
     border-radius: 22px;
     color: #ffffff;
     border-color: transparent;
-<<<<<<< Updated upstream
-    background-color: #ecebeb;
-    @media screen and (min-width: 1200px) {
-      width: 200px;
-    }
-
-    @media screen and (min-width: 768px) {
-      width: 190px;
-    }
-    @media screen and (max-width: 767px) {
-      width: 160px;
-=======
     background-color: #d41443;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -179,7 +162,6 @@
     &:focus {
       background-color: #ecebeb;
       color: #d41443;
->>>>>>> Stashed changes
     }
   }
 
