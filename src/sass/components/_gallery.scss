@@ -22,7 +22,7 @@
     border-radius: 8px;
     overflow: hidden;
 
-    transition: transform 400ms cubic-bezier(.14, .76, .89, .62);
+    transition: transform 400ms ease;
 
     &:hover,
     &:focus {
