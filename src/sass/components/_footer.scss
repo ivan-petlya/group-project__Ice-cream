@@ -1,0 +1,213 @@
+
+.footer{
+    background-color: #FFF5F6;
+    padding-bottom: 3px;
+
+}
+
+.footer .container{
+    display: flex;
+    flex-direction: column;
+}
+.footer_bloc{
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 59px;   
+    }
+    @media screen and (min-width: 768px) {
+        padding-bottom: 0px;   
+    }
+}
+
+.footer_text {
+    flex-direction: column;
+    display: flex;
+    color: #D41443;
+    padding-bottom: 40px;
+    @media screen and (min-width: 768px) {
+        padding-bottom: 0px;   
+        width: 340px;
+    }
+    @media screen and (min-width: 768px) {
+        width: auto;
+    }
+   
+}
+   
+.footer-list{
+    margin: 0;
+    width: 232px;
+    height: 42px;  
+}
+
+.footer_text_small{
+    font-size: 18px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: #FFA5BA;
+    padding-bottom: 16px;
+    @media screen and (min-width: 768px) {
+        font-size: 26px;
+        line-height: 1.15;
+        letter-spacing: 0.04em;
+        padding-bottom: 12px;
+        width: 340px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 30px;
+        line-height: 1.13;
+        padding-bottom: 16px;
+    }
+}
+
+.footer_text_big{
+    font-size: 34px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  
+    width: 200px;
+    height: auto;
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+        line-height: 1.15;
+        letter-spacing: 0.06em;
+       padding-bottom: 40px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 58px;
+        line-height: 1.13;
+        width: 474px;
+        height: auto;
+        padding-bottom: 60px; 
+    }
+}
+
+.footer_contact{
+    text-align: end;
+    flex-direction: column;
+    padding-bottom: 40px;
+    @media screen and (min-width: 768px) {
+        padding-top: 40px;
+        padding-bottom: 0px;   
+        padding-left: 128px;
+
+    }
+    @media screen and (min-width: 1200px) {
+       padding-left: 375px;
+       padding-top:11px;
+       padding-bottom: 60px;
+       
+    }
+}
+
+.footer-soc-list{
+    display: flex;
+    margin: 0;
+    justify-content: right;
+    padding-bottom: 40px;
+}
+
+.footer_soc_item{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #FFFFFF;
+    background: #FEA5BB;;
+    transition: background-color  #D41443  cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 768px) {
+        
+        width: 34px;
+        height: 34px;
+    }
+    @media screen and (min-width: 1200px) {
+        
+    }
+}
+
+.footer_soc_item:not(:last-child) {
+    margin-right: 28.24px;
+    @media screen and (min-width: 768px) {
+        margin-right: 20px;        
+    }
+    @media screen and (min-width: 1200px) {
+        margin-right: 30px;
+    }
+
+}
+
+.footer_soc_item:hover,
+.footer_soc_item:focus {
+    background-color:#D41443;
+    cursor: pointer; 
+}
+
+.tel-text{
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.86;
+    text-align: right;
+    color: #000000;
+    //padding-bottom: 40px;
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 1.85;       
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+        line-height: 1.86;  
+        letter-spacing: 0.02em;  
+        //padding-bottom: 60px;
+    }
+}
+.tel-num{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.24;
+    text-align: right;
+    color: #D41443;
+    //padding-bottom: 40px;
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 1.86;       
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+        letter-spacing: 0.02em;  
+        //padding-bottom: 60px;
+    }
+}
+.end{
+    margin: 0;   
+}
+
+.footer-title_end{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    color: #907E82;
+    padding-top: 16px;
+    width: 150px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  
+    @media screen and (min-width: 768px) {
+        line-height: 1.86;    
+        letter-spacing: 0.02em; 
+        padding-top: 8px;
+        width: auto;
+        height: 26px;  
+    }
+    @media screen and (min-width: 1200px) {
+        letter-spacing: 0.02em;  
+        padding-top: 7px;
+    }
+}
+    
