@@ -1,14 +1,14 @@
 
 .footer{
-    background-color: #FFF5F6;
+    background-color:$secondary-bg-color;
     padding-bottom: 3px;
-
 }
 
 .footer .container{
     display: flex;
     flex-direction: column;
 }
+
 .footer_bloc{
 
     @media screen and (min-width: 768px) {
@@ -24,7 +24,7 @@
 .footer_text {
     flex-direction: column;
     display: flex;
-    color: #D41443;
+    color: $accent-color;
     padding-bottom: 40px;
     @media screen and (min-width: 768px) {
         padding-bottom: 0px;   
@@ -43,10 +43,11 @@
 }
 
 .footer_text_small{
+    font-family:'Titan One', cursive ;
     font-size: 18px;
     line-height: 1.14;
     text-transform: uppercase;
-    color: #FFA5BA;
+    color:$secondary-title-color;
     padding-bottom: 16px;
     @media screen and (min-width: 768px) {
         font-size: 26px;
@@ -63,11 +64,11 @@
 }
 
 .footer_text_big{
+    font-family:'Titan One', cursive ;
     font-size: 34px;
     line-height: 1.16;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-  
     width: 200px;
     height: auto;
     @media screen and (min-width: 768px) {
@@ -93,7 +94,6 @@
         padding-top: 40px;
         padding-bottom: 0px;   
         padding-left: 128px;
-
     }
     @media screen and (min-width: 1200px) {
        padding-left: 375px;
@@ -117,17 +117,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    fill: #FFFFFF;
-    background: #FEA5BB;;
-    transition: background-color  #D41443  cubic-bezier(0.4, 0, 0.2, 1);
+    fill: $bg-color;
+    background:$sixth-bg-color;
+    transition: background-color $accent-color  cubic-bezier(0.4, 0, 0.2, 1);
     @media screen and (min-width: 768px) {
-        
         width: 34px;
         height: 34px;
     }
     @media screen and (min-width: 1200px) {
         
     }
+   
+
 }
 
 .footer_soc_item:not(:last-child) {
@@ -138,13 +139,19 @@
     @media screen and (min-width: 1200px) {
         margin-right: 30px;
     }
-
 }
 
 .footer_soc_item:hover,
 .footer_soc_item:focus {
-    background-color:#D41443;
+    background-color:$accent-color;
     cursor: pointer; 
+}
+
+.footer_soc_item_link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: $bg-color;
 }
 
 .tel-text{
@@ -152,7 +159,7 @@
     font-size: 13px;
     line-height: 1.86;
     text-align: right;
-    color: #000000;
+    color: $primary-text-color;
     //padding-bottom: 40px;
     @media screen and (min-width: 768px) {
         font-size: 14px;
@@ -170,7 +177,7 @@
     font-size: 12px;
     line-height: 1.24;
     text-align: right;
-    color: #D41443;
+    color: $accent-color;
     //padding-bottom: 40px;
     @media screen and (min-width: 768px) {
         font-size: 14px;
@@ -191,7 +198,7 @@
     font-size: 14px;
     line-height: 1.5;
     text-align: center;
-    color: #907E82;
+    color: $secondary-text-color;
     padding-top: 16px;
     width: 150px;
     height: auto;
