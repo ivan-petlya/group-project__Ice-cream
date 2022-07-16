@@ -104,9 +104,14 @@
     ></script>
 
     <script type="text/javascript">
-      $('.swiper-wrapper').slick();
+      $('.slider-wrapper').slick({
+        slidesToShow: 1,
+        infinite: true,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false,
+        speed: 1000,
+      });
     </script>
-
-    <!-- <script src="./js/script.js"></script> -->
   </body>
 </html>
