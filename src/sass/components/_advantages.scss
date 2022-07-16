@@ -1,0 +1,173 @@
+.advantages {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    background-color: #FFF5F6;
+
+    @include mq(tablet) {
+        padding-bottom: 251px;
+    }
+
+    @include mq(desktop)  {
+        padding-top: 40px;
+        padding-bottom: 209px;
+    }
+}
+
+.advantages__list {
+    display: block;
+
+    @include mq(tablet) {
+        display: flex;
+        justify-content: center;
+        gap: 22px;
+        margin: 0 80px 0 80px;
+    }
+
+    @include mq(desktop)  {
+        gap: 132px;
+        margin-right: 100px;
+    }
+}
+
+.advantages__span {
+    display: block;
+    margin-bottom: 24px;
+    font-family: 'Titan One';
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #D41443;
+
+    @include mq(tablet) {
+        margin-bottom: 13px;
+        font-size: 48px;
+        line-height: 1.16;
+        text-transform: none;
+    }
+
+    @include mq(desktop)  {
+        margin-bottom: 24px;
+        font-size: 58px;
+        line-height: 1.14;
+    }
+}
+
+.advantages__item {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.7;
+    color: #000000;
+
+    @include mq(tablet) {
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
+
+        @include mq(tablet) {
+        width: calc((100% - 44px) / 3);
+        font-size: 14px;
+    }
+
+    @include mq(desktop)  {
+        width: calc((100% - 264px) / 3);
+        font-size: 16px;
+    }
+
+
+    &:first-child::before {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-image: url(../images/advantages/milk_cup-1x.png);
+        background-repeat: no-repeat;
+        margin-bottom: 16px;
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            & {
+                background-image: url(../images/advantages/milk_cup_2x.png);
+                width: 50px;
+                height: 50px;
+                background-size: contain;
+            }
+        }
+
+
+        @include mq(tablet) {
+            margin-bottom: 36px;
+        }
+
+        @include mq(desktop)  {
+            margin-bottom: 40px;
+        }
+    }
+
+    &:nth-child(2n)::before {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-image: url(../images/advantages/apple_bin_1x.png);
+        background-repeat: no-repeat;
+        margin-bottom: 16px;
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            & {
+                background-image: url(../images/advantages/apple-bin_2x.png);
+                width: 50px;
+                height: 50px;
+                background-size: contain;
+            }
+        }
+
+        @include mq(tablet){
+            margin-bottom: 36px;
+        }
+
+        @include mq(desktop)  {
+            margin-bottom: 40px;
+        }
+    }
+
+    &:nth-child(3n)::before {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-image: url(../images/advantages/heart_1x.png);
+        background-repeat: no-repeat;
+        margin-bottom: 16px;
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            & {
+                background-image: url(../images/advantages/heart_2x.png);
+                width: 50px;
+                height: 50px;
+                background-size: contain;
+            }
+        }
+
+        @include mq(tablet) {
+            margin-bottom: 36px;
+        }
+
+        @include mq(desktop)  {
+            margin-bottom: 40px;
+        }
+
+
+    }
+}
