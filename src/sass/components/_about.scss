@@ -88,7 +88,7 @@
     margin-bottom: 35px;
     font-size: 12px;
     line-height: 1.62;
-    color: $black;
+    color: $black-text-color;
   
     @include mq(tablet-only) {
       font-size: 14px;
