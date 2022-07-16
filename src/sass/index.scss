@@ -1,9 +1,10 @@
 // Utilities
 
 @import './utilities/mixins';
+@import './utilities/breakpoints';
 @import './utilities/colors';
 @import './utilities/variables';
-@import './utilities/vissually-hidden';
+@import './utilities/visually-hidden';
 
 // Basic styles
 @import './basic/container';
@@ -22,3 +23,6 @@
 @import './components/customer-reviews';
 @import './components/contacts';
 @import './components/footer';
+@import './components/modal';
+@import './components/modal-about';
+@import './components/modal-location';
