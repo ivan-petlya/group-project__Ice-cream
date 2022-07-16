@@ -8,8 +8,9 @@
     background-size: contain;
     background-position: 0px 720px;
 
-// Размер  до 767px
-@media (max-width: 767px) {
+// Размер  от 320
+
+@media (min-width: 320px) {
     background-image: url('../images/about/milk-m.png');
 
     // Размер  от 1200px retina
@@ -138,7 +139,8 @@
   }
   // Кнопка
 .about-discription .btn {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.31;
+    @include fontButton();
+    // font-weight: 700;
+    // font-size: 16px;
+    // line-height: 1.31;
   }
