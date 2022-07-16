@@ -12,7 +12,7 @@
 @media (max-width: 767px) {
     background-image: url('../images/about/milk-m.png');
 
-    // Размер  от 1280px retina
+    // Размер  от 1200px retina
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -21,12 +21,12 @@
     }
   }
 
-  // Размер  от 1280px
-  @media (min-width: 1280px) {
+  // Размер  от 1200px
+  @media (min-width: 1200px) {
     background-position: 0px 370px;
     background-image: url('../images/about/milk-d.png');
 
-    // Размер  от 1280px retina
+    // Размер  от 1200px retina
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
