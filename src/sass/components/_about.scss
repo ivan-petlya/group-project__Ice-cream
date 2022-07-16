@@ -124,7 +124,7 @@
   .about-discription__text {
     font-size: 12px;
     line-height: 1.62;
-    color: $third;
+    color: $grey-text-color;
   
     @include mq(tablet-only) {
       font-size: 14px;
