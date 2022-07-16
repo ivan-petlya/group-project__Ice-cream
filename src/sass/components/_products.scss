@@ -14,6 +14,14 @@
   text-transform: uppercase;
   color: #ffa5ba;
   margin-bottom: 15px;
+  @include mq(tablet) {
+    font-size: 26px;
+    line-height: 1.14;
+  }
+  @include mq(desktop) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
 }
 .products__title {
   font-family: "Titan One";
@@ -27,9 +35,12 @@
   margin-bottom: 144px;
   @include mq(tablet) {
     margin-bottom: 160px;
+    font-size: 48px;
   }
   @include mq(desktop) {
     margin-bottom: 280px;
+    font-size: 58px;
+    line-height: 1.13;
   }
 }
 .products-list {
