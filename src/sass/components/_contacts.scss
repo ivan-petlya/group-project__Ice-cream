@@ -200,7 +200,6 @@
     @media screen and (min-width: 1200px) {
       width: 200px;
     }
-
     &:hover,
     &:focus {
       box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
@@ -223,7 +222,6 @@
     }
   }
   &__button-icon {
-    display: inline-block;
 
     fill: currentColor;
     margin-left: 13px;
