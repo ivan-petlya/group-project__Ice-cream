@@ -1,5 +1,5 @@
 @mixin mq($range) {
-  $mobile: 480px;
+  $mobile: 320px;
   $tablet: 768px;
   $desktop: 1200px;
   @if $range == mobile-only {
@@ -37,3 +37,56 @@
     }
   }
 }
+
+// Media mixins
+
+@mixin minMedia($startBreakpoint) {
+  @media screen and (min-width: $startBreakpoint) {
+    @content;
+  }
+}
+
+@mixin maxMedia($finishBreakpoint) {
+  @media screen and (max-width: $finishBreakpoint) {
+    @content;
+  }
+}
+
+@mixin rangeMedia($startBreakpoint, $finishBreakpoint) {
+  @media screen and (min-width: $startBreakpoint) and (max-width: $finishBreakpoint) {
+    @content;
+  }
+}
+@mixin fontButton($ff: $dm-sans, $fw: 700, $fs: 16px, $lh: 1.31) {
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+}
+
+// Centered Flex Mixin
+
+@mixin centeredFlex($type: flex, $align: center, $just: center) {
+  display: $type;
+  align-items: $align;
+  justify-content: $just;
+}
+
+/* Example */
+
+// .footer__wrapper {
+//   margin-left: auto;
+//   margin-right: auto;
+//   @include mq(tablet) {
+//     display: flex;
+//     justify-content: space-around;
+//     width: 100%;
+//   }
+//   @include mq(desktop) {
+//     display: flex;
+//     flex-direction: row;
+//   }
+//   @include mq(mobile) {
+//     margin-bottom: 60px;
+//   }
+// }

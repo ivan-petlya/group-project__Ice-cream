@@ -1,0 +1,243 @@
+.products {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+.products__label {
+  display: inline-block;
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.16;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffa5ba;
+  margin-bottom: 15px;
+}
+.products__title {
+  font-family: "Titan One";
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+  margin-bottom: 144px;
+  @include mq(tablet) {
+    margin-bottom: 160px;
+  }
+  @include mq(desktop) {
+    margin-bottom: 280px;
+  }
+}
+.products-list {
+  display: block;
+  margin: 0 auto;
+  gap: 16px;
+  @include mq(tablet) {
+    display: flex;
+    gap: 16px;
+  }
+  @include mq(desktop) {
+    display: flex;
+    gap: 32px;
+  }
+}
+
+.products-list__item {
+  width: calc((100% - 5px) / 1);
+  border-radius: 24px;
+  margin: 0 auto;
+  position: relative;
+  padding: 163px 44px 50px;
+
+  @include mq(tablet) {
+    width: calc((100% - 40px) / 3);
+    padding: 125px 32px 40px;
+  }
+  @include mq(desktop) {
+    padding: 163px 44px 50px;
+  }
+}
+
+.products-list__item:not(:last-child) {
+  margin-bottom: 160px;
+  @include mq(tablet) {
+    margin-bottom: 0;
+  }
+}
+
+.products-list__img::after {
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  width: 280px;
+  height: 280px;
+  z-index: 2;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  @include mq(tablet) {
+    width: 100%;
+  }
+  @include mq(desktop) {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.products-list__item:nth-child(1) {
+  background-color: #ffb8ca;
+}
+.products-list__item:nth-child(2) {
+  background-color: #f0d1a5;
+}
+.products-list__item:nth-child(3) {
+  background-color: #c2e297;
+}
+
+.products-ice-cream::after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  background-image: url("../images/products/mobile/ice-cream-mobile-x1.png");
+  background-size: contain;
+  @include mq(mobile) {
+    @include mq(retina) {
+      background-image: url("../images/products/mobile/ice-cream-mobile-x2.png");
+    }
+  }
+  @include mq(tablet) {
+    background-image: url("../images/products/tablet/ice-cream-tablet-x1.png");
+    @include mq(retina) {
+      background-image: url("../images/products/tablet/ice-cream-tablet-x2.png");
+    }
+  }
+  @include mq(desktop) {
+    background-image: url("../images/products/ice-cream-desktop-x1.png");
+    @include mq(retina) {
+      background-image: url("../images/products/ice-cream-desktop-x2.png");
+    }
+  }
+}
+
+.products-ice-coffee::after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../images/products/mobile/ice-coffee-mobile-x1.png");
+  @include mq(mobile) {
+    @include mq(retina) {
+      background-image: url("../images/products/mobile/ice-coffee-mobile-x2.png");
+    }
+  }
+  @include mq(tablet) {
+    background-image: url("../images/products/tablet/ice-coffee-tablet-x1.png");
+    @include mq(retina) {
+      background-image: url("../images/products/tablet/ice-coffee-tablet-x2.png");
+    }
+  }
+  @include mq(desktop) {
+    background-image: url("../images/products/ice-coffee-desktop-x1.png");
+    @include mq(retina) {
+      background-image: url("../images/products/ice-coffee-desktop-x2.png");
+    }
+  }
+}
+
+.products-ice-milkshakes::after {
+  content: "";
+  position: absolute;
+  background-size: contain;
+  @include mq(mobile) {
+    background-image: url("../images/products/mobile/ice-milkshakes-mobile-x1.png");
+    @include mq(retina) {
+      background-image: url("../images/products/mobile/ice-milkshake-mobile-x2.png");
+    }
+  }
+  @include mq(tablet) {
+    background-image: url("../images/products/tablet/ice-milkshakes-tablet-x1.png");
+    @include mq(retina) {
+      background-image: url("../images/products/tablet/ice-milkshakes-tablet-x2.png");
+    }
+
+    @include mq(desktop) {
+      background-image: url("../images/products/ice-milkshakes-desktop-x1.png");
+      @include mq(retina) {
+        background-image: url("../images/products/ice-milkshakes-desktop-x2.png");
+      }
+    }
+  }
+}
+
+.products-list__title {
+  font-family: "Titan One";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 60px;
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-bottom: 6px dotted white;
+    left: 50%;
+    transform: translate(-50%);
+    width: 26px;
+    height: 6px;
+    margin-top: 32px;
+  }
+}
+
+.products-list__descr {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  margin-bottom: 32px;
+  @include mq(tablet) {
+    line-height: 1.7;
+  }
+  @include mq(desktop) {
+    font-size: 16px;
+  }
+}
+
+.products-list__btn {
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+  border-color: transparent;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background: #d41443;
+    .products-list__icon {
+      color: white;
+    }
+  }
+}
+
+.products-list__icon {
+  display: block;
+  margin: 0 auto;
+  color: #d41443;
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
