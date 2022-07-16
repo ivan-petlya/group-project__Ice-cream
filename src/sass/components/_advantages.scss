@@ -61,13 +61,11 @@
     line-height: 1.7;
     color: #000000;
 
-    @include mq(tablet) {
-        &:not(:last-child) {
-            margin-bottom: 32px;
-        }
+    &:not(:last-child) {
+        margin-bottom: 32px;
     }
 
-        @include mq(tablet) {
+    @include mq(tablet) {
         width: calc((100% - 44px) / 3);
         font-size: 14px;
     }
