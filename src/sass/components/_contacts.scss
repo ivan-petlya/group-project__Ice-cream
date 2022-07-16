@@ -90,11 +90,20 @@
     text-decoration: none;
     font-size: 12px;
     color: #907e82;
+    &:hover,
+    &:focus {
+      color: #d41443;
+    }
   }
   &__mail {
     text-decoration: none;
     font-size: 12px;
     color: #907e82;
+
+    &:hover,
+    &:focus {
+      color: #d41443;
+    }
   }
   &__contacts-list {
     padding: 0px;
@@ -126,16 +135,21 @@
 
   &__button {
     height: 44px;
+<<<<<<< Updated upstream
+=======
+    padding-left: 30px;
+    padding-right: 20px;
+>>>>>>> Stashed changes
     display: flex;
     justify-content: center;
     align-items: center;
     line-height: 1.31;
     font-size: 16px;
-    font-weight: 700;
-    color: #ffffff;
+    // font-weight: 700;
     border-radius: 22px;
-    color: #d41443;
+    color: #ffffff;
     border-color: transparent;
+<<<<<<< Updated upstream
     background-color: #ecebeb;
     @media screen and (min-width: 1200px) {
       width: 200px;
@@ -146,6 +160,25 @@
     }
     @media screen and (max-width: 767px) {
       width: 160px;
+=======
+    background-color: #d41443;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 1200px) {
+      min-width: 200px;
+    }
+    @media screen and (min-width: 768px) {
+      min-width: 190px;
+    }
+    @media screen and (min-width: 320px) {
+      min-width: 160px;
+    }
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+      color: #d41443;
     }
   }
 
