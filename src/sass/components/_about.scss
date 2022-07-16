@@ -6,9 +6,139 @@
   
     background-repeat: no-repeat;
     background-size: contain;
-    // background-position: 0px 720px;
+    background-position: 0px 720px;
 
-    @media (max-width: 767px) {
-        background-image: url('../images/about/milk-m.png');
+// Размер  до 767px
+@media (max-width: 767px) {
+    background-image: url('../images/about/milk-m.png');
+
+    // Размер  от 1280px retina
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/about/milk-m@2x.png');
+    }
+  }
+
+  // Размер  от 1280px
+  @media (min-width: 1280px) {
+    background-position: 0px 370px;
+    background-image: url('../images/about/milk-d.png');
+
+    // Размер  от 1280px retina
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/about/milk-d@2x.png');
+    }
+  }
+
+  @include mq(tablet-only) {
+    padding-top: 130px;
+    padding-bottom: 33px;
+  }
+  @include mq(desktop) {
+    padding-top: 125px;
+    padding-bottom: 20px;
+  }
 }
-}
+.section-about .title {
+    margin-bottom: 26px;
+  
+    @include mq(tablet-only) {
+      margin-bottom: 50px;
+    }
+  
+    @include mq(desktop) {
+      margin-bottom: 55px;
+    }
+  }
+  .about {
+    @include mq(tablet) {
+      display: flex;
+    }
+  }
+  
+  .about__icon {
+    @include mq(tablet-only) {
+      width: 340px;
+      height: 339px;
+    }
+    @include mq(desktop) {
+      width: 516px;
+      height: 516px;
+    }
+  }
+  
+  .about-discription {
+    margin-top: 45px;
+    @include mq(tablet-only) {
+      width: 340px;
+      margin-left: 17px;
+    }
+    @include mq(desktop) {
+      width: 463px;
+      margin-left: 74px;
+    }
+  }
+  
+  .about-discription__title {
+    margin-bottom: 35px;
+    font-size: 12px;
+    line-height: 1.62;
+    color: $black;
+  
+    @include mq(tablet-only) {
+      font-size: 14px;
+      line-height: 1.76;
+    }
+  
+    @include mq(desktop) {
+      font-size: 16px;
+      line-height: 1.76;
+    }
+  }
+  .about-discription__list {
+    margin-bottom: 25px;
+    @include mq(tablet-only) {
+      margin-bottom: 62px;
+    }
+    @include mq(desktop) {
+      margin-bottom: 45px;
+    }
+  }
+  
+  .about-discription__item:not(:last-child) {
+    margin-bottom: 20px;
+  
+    @include mq(tablet-only) {
+      margin-bottom: 25px;
+    }
+    @include mq(desktop) {
+      margin-bottom: 44px;
+    }
+  }
+  
+  .about-discription__text {
+    font-size: 12px;
+    line-height: 1.62;
+    color: $third;
+  
+    @include mq(tablet-only) {
+      font-size: 14px;
+      line-height: 1.76;
+    }
+  
+    @include mq(desktop) {
+      font-size: 16px;
+      line-height: 1.94;
+    }
+  }
+  // Кнопка
+.about-discription .btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+  }
