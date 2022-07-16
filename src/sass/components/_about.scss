@@ -204,6 +204,9 @@
 
     cursor: pointer;
 }
+.btn__icon{
+  fill: #d41443;
+}
   // Кнопка
 .about-discription .btn {
     @include fontButton();
