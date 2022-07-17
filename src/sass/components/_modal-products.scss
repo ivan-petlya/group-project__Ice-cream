@@ -1,1 +1,74 @@
-// temporary comment
+// .backdrop {
+//     position: fixed;
+//     min-width: 320px;
+//     z-index: 100;
+//     top: 0;
+//     left: 0;
+//     width: 100vw;
+//     height: 100vh;
+//     background-color: rgba(255, 165, 186, 0.5);
+//     transition: opacity $main-effect, visibility $main-effect;
+//     opacity: 1;
+//     pointer-events: auto;
+//     visibility: visible;
+//     &--dark {
+//       background-color: rgba(255, 165, 186, 0.8);
+//     }
+//   }
+
+// .modal-close-btn {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   margin-left: auto;
+//   margin-bottom: 5px;
+
+//   width: 30px;
+//   height: 30px;
+//   padding: 1px 6px;
+//   border-color: transparent;
+//   border-width: 2px;
+//   border-radius: 50%;
+//   background-color: var(--color-design-white);
+//   transition: background-color 250ms linear;
+
+//   &:hover,
+//   &:focus {
+//     background-color: var(--bg-btn-dark);
+//   }
+// }
+// .modal-close-btn__icon {
+//   fill: var(--bg-btn-dark);
+//   transition: fill 250ms linear;
+
+//   .modal-close-btn:hover &,
+//   .modal-close-btn:focus & {
+//     fill: var(--bg-btn-light);
+//   }
+// }
+
+.modal-close-btn {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  stroke: $primary-color;
+  background-color: inherit;
+  @include centeredFlex();
+}
+
+#my-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+#my-canvas.active {
+  visibility: visible;
+}
