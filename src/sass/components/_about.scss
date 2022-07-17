@@ -203,6 +203,9 @@
 
     cursor: pointer;
 }
+.btn__icon{
+  fill: $accent-color;
+}
   // Кнопка
 .about-discription .btn {
     @include fontButton();

@@ -119,6 +119,13 @@
     background: $white-text-color;
     cursor: pointer;
   }
+  .header-button__icon {
+    width: 6px;
+    height: 10px;
+    margin-left: 12px;
+    fill: none;
+    stroke: $primary-color;
+  }
 
   &:hover,
   &:focus {
