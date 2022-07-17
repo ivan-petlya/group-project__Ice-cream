@@ -185,7 +185,7 @@
         background-color: $bg-color;
         color:$accent-color;
         transition: background-color $transition ;
-
+       
         &:hover,
         &:focus {
             background-color:  $button-hover-color;
@@ -202,11 +202,12 @@
     border-radius: 22px;
 
     cursor: pointer;
+  
 }
-  // Кнопка
+.btn__icon{
+  fill: $accent-color;
+}
+
 .about-discription .btn {
     @include fontButton();
-    // font-weight: 700;
-    // font-size: 16px;
-    // line-height: 1.31;
-  }
+}

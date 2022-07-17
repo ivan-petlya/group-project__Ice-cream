@@ -155,13 +155,15 @@
 .slider-wrapper .slick-dots button {
   width: 12px;
   height: 12px;
-  background-color: $sixth-bg-color;
+  background-color: $seventh-bg-color;
   border-radius: 50%;
 }
 
 .slider-wrapper .slick-dots li.slick-active button {
   background-color: transparent;
   background-image: url('../images/customer-reviews/house.svg');
+  background-repeat: no-repeat;
+  border-radius: 0%;
   width: 15px;
   height: 15px;
 }
