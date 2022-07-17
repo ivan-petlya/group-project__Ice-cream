@@ -81,6 +81,21 @@
   font-size: $fs;
   line-height: $lh;
 }
+@mixin fontTitle($ff: $titan-one, $fw: 400, $fs: 34px, $lh: 1.15, $ls: 0.04em) {
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+  text-transform: uppercase;
+  color: $bg-color;
+}
+@mixin fontBody($ff: $dm-sans, $fw: 500, $fs: 12px, $lh: 1.62) {
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+}
 
 // Centered Flex Mixin
 

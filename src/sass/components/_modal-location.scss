@@ -1,0 +1,84 @@
+.backdrop {
+  position: fixed;
+  min-width: 320px;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 165, 186, 0.5);
+  transition: opacity $main-effect, visibility $main-effect;
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: all $main-effect;
+}
+
+.modal-location {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0 auto;
+  padding: 30px;
+  max-width: 450px;
+  width: 95vw;
+  max-height: 100vh;
+  overflow: scroll;
+  background-color: $primary-bg-color;
+  box-shadow: $contacts-shadow;
+  transition: transform $main-effect;
+  transform: translate(-50%, -50%) scale(1);
+
+  @include maxMedia($min) {
+    position: fixed;
+    min-width: 320px;
+  }
+  @include minMedia($tab) {
+    border-radius: 10px;
+    padding: 40px;
+    overflow: auto;
+    height: auto;
+    max-width: 640px;
+  }
+}
+
+.modal-location-title {
+  text-align: center;
+  @include fontTitle($fs: 16px, $lh: 1.31);
+  color: $primary-color;
+  margin-bottom: 12px;
+  @include minMedia($tab) {
+    font-size: 26px;
+    line-height: calc(30 / 26);
+  }
+  @include minMedia($desk) {
+    font-size: 30px;
+    line-height: calc(34 / 30);
+  }
+}
+.modal-location-text {
+  @include fontBody($fs: 12px, $lh: 1.36);
+  color: $secondary-text-color;
+  &:nth-last-child(2) {
+    margin-bottom: 20px;
+  }
+
+  @include minMedia($tab) {
+    font-size: 14px;
+    line-height: calc(25 / 14);
+  }
+  @include minMedia($desk) {
+    line-height: calc(27 / 14);
+  }
+}
+
+.modal-location-map {
+  width: 100%;
+  max-height: 100%;
+  border: 0px;
+}

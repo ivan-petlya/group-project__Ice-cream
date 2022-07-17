@@ -11,9 +11,6 @@
   opacity: 1;
   pointer-events: auto;
   visibility: visible;
-  &--dark {
-    background-color: rgba(255, 165, 186, 0.8);
-  }
 }
 .is-hidden {
   opacity: 0;
@@ -29,10 +26,11 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  border-radius: 5px;
   margin: 0 auto;
   padding: 40px;
   width: 95vw;
-  max-height: 100vh;
+  height: 550px;
   overflow: scroll;
   background-color: $primary-bg-color;
   box-shadow: $contacts-shadow;
