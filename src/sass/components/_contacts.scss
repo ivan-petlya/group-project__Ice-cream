@@ -215,14 +215,14 @@
     }
   }
   &__button--light {
-    background-color: transparent;
+    background-color: #ffffff;
     color: #d41443;
     &:hover {
       background-color: #ecebeb;
     }
   }
   &__button-icon {
-        fill: currentColor;
+    fill: currentColor;
     margin-left: 13px;
   }
 }
