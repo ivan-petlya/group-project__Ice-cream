@@ -64,6 +64,7 @@
         font-size: 30px;
         line-height: 1.13;
         padding-bottom: 16px;
+        width: auto;
     }
 }
 
@@ -85,7 +86,7 @@
     @include mq(desktop) {
         font-size: 58px;
         line-height: 1.13;
-        width: 474px;
+        width: auto;
         height: auto;
         padding-bottom: 60px; 
     }
@@ -102,8 +103,8 @@
     }
     @include mq(desktop) {
        padding-left: 375px;
-       padding-top:11px;
-       padding-bottom: 60px;
+       padding-top: 6px;
+       //padding-bottom: 60px;
        
     }
 }
@@ -160,6 +161,12 @@
     align-items: center;
     justify-content: center;
     fill: $bg-color;
+}
+.tel{
+    @include mq(desktop) {
+        padding-bottom: 60px;
+    }
+   
 }
 
 .tel-text{
