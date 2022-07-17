@@ -1,9 +1,10 @@
 // Utilities
 
 @import './utilities/mixins';
+@import './utilities/breakpoints';
 @import './utilities/colors';
 @import './utilities/variables';
-@import './utilities/vissually-hidden';
+@import './utilities/visually-hidden';
 
 // Basic styles
 @import './basic/container';
@@ -13,13 +14,15 @@
 
 // Partial files
 
-@import './components/contacts';
 @import './components/hero-header';
+@import './components/mobile-menu';
 @import './components/products';
 @import './components/about';
 @import './components/advantages';
 @import './components/gallery';
+@import './components/customer-reviews';
 @import './components/contacts';
 @import './components/footer';
-
-
+@import './components/modal';
+@import './components/modal-about';
+@import './components/modal-location';

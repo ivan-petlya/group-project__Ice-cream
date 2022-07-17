@@ -1,0 +1,234 @@
+
+.footer{
+    background-color:$secondary-bg-color;
+    padding-bottom: 3px;
+}
+
+.footer .container{
+    display: flex;
+    flex-direction: column;
+    @include mq(tablet) {
+        padding-left: 16px;
+        padding-right: 20px;
+    }
+   
+}
+
+.footer_bloc{
+
+    @include mq(tablet) {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 59px;   
+    }
+    @include mq(desktop) {
+        padding-bottom: 0px;   
+    }
+}
+
+.footer_text {
+    flex-direction: column;
+    display: flex;
+    color: $accent-color;
+    padding-bottom: 40px;
+    @include mq(tablet){
+        padding-bottom: 0px;   
+        width: 340px;
+    }
+    @include mq(tablet) {
+        width: auto;
+    }
+   
+}
+   
+.footer-list{
+    margin: 0;
+    width: 232px;
+    height: 42px;  
+}
+
+.footer_text_small{
+    font-family:'Titan One', cursive ;
+    font-size: 18px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color:$secondary-title-color;
+    padding-bottom: 16px;
+    @include mq(tablet){
+        font-size: 26px;
+        line-height: 1.15;
+        letter-spacing: 0.04em;
+        padding-bottom: 12px;
+        width: 340px;
+    }
+    @include mq(desktop) {
+        font-size: 30px;
+        line-height: 1.13;
+        padding-bottom: 16px;
+    }
+}
+
+.footer_text_big{
+    font-family:'Titan One', cursive ;
+    font-size: 34px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-family:'Titan One', cursive ;
+    width: 200px;
+    height: auto;
+    @include mq(tablet) {
+        font-size: 48px;
+        line-height: 1.15;
+        letter-spacing: 0.06em;
+       padding-bottom: 40px;
+    }
+    @include mq(desktop) {
+        font-size: 58px;
+        line-height: 1.13;
+        width: 474px;
+        height: auto;
+        padding-bottom: 60px; 
+    }
+}
+
+.footer_contact{
+    text-align: end;
+    flex-direction: column;
+    padding-bottom: 40px;
+    @include mq(tablet) {
+        padding-top: 40px;
+        padding-bottom: 0px;   
+        padding-left: 128px;
+    }
+    @include mq(desktop) {
+       padding-left: 375px;
+       padding-top:11px;
+       padding-bottom: 60px;
+       
+    }
+}
+
+.footer-soc-list{
+    display: flex;
+    margin: 0;
+    justify-content: right;
+    padding-bottom: 40px;
+}
+
+.footer_soc_item{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: $bg-color;
+    background:$sixth-bg-color;
+
+    border-color: transparent;
+
+    transition: background-color $accent-color  cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+  
+    @include mq(tablet) {
+        width: 34px;
+        height: 34px;
+    }
+    @include mq(desktop) {
+        
+    }
+   
+
+}
+
+.footer_soc_item:not(:last-child) {
+    margin-right: 28.24px;
+    @include mq(tablet) {
+        margin-right: 20px;        
+    }
+    @include mq(desktop) {
+        margin-right: 30px;
+    }
+}
+
+.footer_soc_item:hover,
+.footer_soc_item:focus {
+    background-color:$accent-color;
+    cursor: pointer; 
+    box-shadow: 0px 1px 3px rgba(0,0,0,.12),0px 1px 1px rgba(0,0,0,.14),0px 2px 1px rgba(0,0,0,.2);
+    
+}
+
+.footer_soc_item_link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: $bg-color;
+}
+
+.tel-text{
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.86;
+    text-align: right;
+    color: $primary-text-color;
+    //padding-bottom: 40px;
+    @include mq(tablet) {
+        font-size: 14px;
+        line-height: 1.85;       
+    }
+    @include mq(desktop) {
+        font-size: 16px;
+        line-height: 1.86;  
+        letter-spacing: 0.02em;  
+        //padding-bottom: 60px;
+    }
+}
+.tel-num{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.24;
+    text-align: right;
+    color: $accent-color;
+    //padding-bottom: 40px;
+    @include mq(tablet) {
+        font-size: 14px;
+        line-height: 1.86;       
+    }
+    @include mq(desktop) {
+        font-size: 16px;
+        letter-spacing: 0.02em;  
+        //padding-bottom: 60px;
+    }
+}
+.end{
+    margin: 0;   
+}
+
+.footer-title_end{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    color:$grey-text-color;
+    padding-top: 16px;
+    width: 150px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  
+    @include mq(tablet) {
+        line-height: 1.86;    
+        letter-spacing: 0.02em; 
+        padding-top: 8px;
+        width: auto;
+        height: 26px;  
+    }
+    @include mq(desktop) {
+        letter-spacing: 0.02em;  
+        padding-top: 7px;
+    }
+}
+    
