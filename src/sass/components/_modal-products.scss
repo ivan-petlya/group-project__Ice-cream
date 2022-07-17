@@ -1,10 +1,10 @@
 .customers__modal {
   position: absolute;
-  width: 90%;
+  width: 80vw;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  overflow: auto;
+  overflow: hidden;
   max-height: 95vh;
   padding: 25px;
   background-color: $bg-color;
@@ -68,7 +68,7 @@
     background-image: url('../images/products/mobile/ice-cream-mobile-x2.png');
   }
 
-  @media screen and(min-width:320px) {
+  @include mq(mobile) {
     background-image: url('../images/products/tablet/ice-cream-tablet-x1.png');
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -78,7 +78,7 @@
     }
   }
 
-  @media screen and(min-width:768px) {
+  @include mq(tablet) {
     width: 220px;
     height: 226px;
     transform: translate(-50%, -50%);
@@ -91,7 +91,7 @@
     }
   }
 
-  @media screen and(min-width:1200px) {
+  @include mq(desktop) {
     width: 220px;
     height: 220px;
     background-image: url('../images/products/ice-cream-desktop-x1.png');
@@ -125,7 +125,7 @@
     background-image: url('../images/products/mobile/ice-coffee-mobile-x2.png');
   }
 
-  @media screen and(min-width:320px) {
+  @include mq(mobile) {
     background-image: url('../images/products/tablet/ice-coffee-tablet-x1.png');
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -135,7 +135,7 @@
     }
   }
 
-  @media screen and(min-width:768px) {
+  @include mq(tablet) {
     width: 220px;
     height: 226px;
     transform: translate(-50%, -50%);
@@ -148,7 +148,7 @@
     }
   }
 
-  @media screen and(min-width:1200px) {
+  @include mq(desktop) {
     width: 220px;
     height: 220px;
     transform: translate(-50%, -50%);
@@ -183,7 +183,7 @@
     background-image: url('../images/products/mobile/ice-milkshake-mobile-x2.png');
   }
 
-  @media screen and(min-width:320px) {
+  @include mq(mobile) {
     background-image: url('../images/products/tablet/ice-milkshakes-tablet-x1.png');
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -193,7 +193,7 @@
     }
   }
 
-  @media screen and(min-width:768px) {
+  @include mq(tablet) {
     width: 220px;
     height: 226px;
     transform: translate(-50%, -45%);
@@ -206,7 +206,7 @@
     }
   }
 
-  @media screen and(min-width:1200px) {
+  @include mq(desktop) {
     width: 220px;
     height: 220px;
     transform: translate(-50%, -45%);
@@ -228,16 +228,16 @@
   letter-spacing: 0.04em;
   color: $secondary-text-color;
 
-  @media screen and(min-width:320px) {
+  @include mq(mobile) {
     margin-bottom: 50px;
     font-size: 16px;
   }
 
-  @media screen and(min-width:768px) {
+  @include mq(tablet) {
     line-height: 1.79;
     margin-bottom: 20px;
   }
-  @media screen and(min-width:1200px) {
+  @include mq(desktop) {
     font-size: 18px;
     line-height: 1.75;
     margin-bottom: 10px;
