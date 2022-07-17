@@ -6,14 +6,8 @@
     <meta property="og:locale" content="en_EN" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Ice cream" />
-    <meta
-      property="og:description"
-      content="ICE CREAM MADE WITH PASSION"
-    />
-    <meta
-      property="og:image"
-      content="../src/images/favicon/for-meta.png"
-    />
+    <meta property="og:description" content="ICE CREAM MADE WITH PASSION" />
+    <meta property="og:image" content="../src/images/favicon/for-meta.png" />
     <meta
       property="og:url"
       content="https://zloykoreshok.github.io/parcel-project-group-21"
@@ -104,9 +98,14 @@
     ></script>
 
     <script type="text/javascript">
-      $('.swiper-wrapper').slick();
+      $('.slider-wrapper').slick({
+        slidesToShow: 1,
+        infinite: true,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false,
+        speed: 1000,
+      });
     </script>
-
-    <!-- <script src="./js/script.js"></script> -->
   </body>
 </html>
