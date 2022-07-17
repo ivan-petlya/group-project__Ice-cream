@@ -10,8 +10,7 @@
     @include mq(tablet) {
         padding-left: 16px;
         padding-right: 20px;
-    }
-   
+    }  
 }
 
 .footer_bloc{
@@ -136,11 +135,6 @@
         width: 34px;
         height: 34px;
     }
-    @include mq(desktop) {
-        
-    }
-   
-
 }
 
 .footer_soc_item:not(:last-child) {
