@@ -48,15 +48,6 @@
     max-width: 640px;
   }
 
-  // @include mq(tablet) {
-  //   width: 80vw;
-  //   max-width: 500px;
-  // }
-
-  // @include mq(desktop) {
-  //   width: 700px;
-  // }
-
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0.8);
     transition: transform $main-effect;
