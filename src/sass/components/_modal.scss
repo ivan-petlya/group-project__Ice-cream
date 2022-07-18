@@ -28,10 +28,10 @@
   left: 50%;
   border-radius: 5px;
   margin: 0 auto;
-  padding: 40px;
+  padding: 10px 40px;
+
   width: 95vw;
-  height: 550px;
-  overflow: scroll;
+  height: 100vh;
   background-color: $primary-bg-color;
   box-shadow: $contacts-shadow;
   transition: transform $main-effect;
@@ -42,6 +42,7 @@
     transition: transform $main-effect;
   }
 }
+
 .modal-close {
   position: absolute;
   right: 8px;
