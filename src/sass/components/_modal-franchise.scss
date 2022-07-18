@@ -1,0 +1,48 @@
+.modal__franchise {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 40px;
+  width: 95vw;
+  max-width: 320px;
+  max-height: 90vh;
+  overflow-y: scroll;
+  background-color: $primary-bg-color;
+  display: block;
+  box-shadow: $contacts-shadow;
+  transition: transform $main-effect;
+  transform: translate(-50%, -50%) scale(1);
+
+  @include maxMedia($min) {
+    position: fixed;
+    min-width: 320px;
+  }
+  @include minMedia($tab) {
+    border-radius: 10px;
+    padding: 40px;
+    overflow: auto;
+    height: auto;
+    max-width: 640px;
+  }
+}
+
+.modal__franchise-close.btn-dark {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+}
+
+.modal__franchise-form {
+  display: inherit;
+  font-size: 13px;
+
+  @include mq(tablet) {
+    font-size: 14px;
+  }
+
+  @include mq(desktop) {
+    font-size: 16px;
+  }
+}

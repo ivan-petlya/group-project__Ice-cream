@@ -14,6 +14,6 @@
     refs.body.classList.toggle('no-scroll');
     document.getElementById('video-frame-close').src = 'not.found/404';
     document.getElementById('video-frame-open').src =
-      'https://www.youtube.com/embed/2egyyEOYg5w';
+      'https://www.youtube.com/embed/sqbGisHfNBo';
   }
 })();

@@ -1,51 +1,25 @@
-// .backdrop {
-//     position: fixed;
-//     min-width: 320px;
-//     z-index: 100;
-//     top: 0;
-//     left: 0;
-//     width: 100vw;
-//     height: 100vh;
-//     background-color: rgba(255, 165, 186, 0.5);
-//     transition: opacity $main-effect, visibility $main-effect;
-//     opacity: 1;
-//     pointer-events: auto;
-//     visibility: visible;
-//     &--dark {
-//       background-color: rgba(255, 165, 186, 0.8);
-//     }
-//   }
+.customers__modal {
+  position: absolute;
+  width: 80vw;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  max-height: 95vh;
+  padding: 25px;
+  background-color: $bg-color;
+  border-radius: 15px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 
-// .modal-close-btn {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   margin-left: auto;
-//   margin-bottom: 5px;
+  @include mq(tablet) {
+    width: 80%;
+  }
 
-//   width: 30px;
-//   height: 30px;
-//   padding: 1px 6px;
-//   border-color: transparent;
-//   border-width: 2px;
-//   border-radius: 50%;
-//   background-color: var(--color-design-white);
-//   transition: background-color 250ms linear;
-
-//   &:hover,
-//   &:focus {
-//     background-color: var(--bg-btn-dark);
-//   }
-// }
-// .modal-close-btn__icon {
-//   fill: var(--bg-btn-dark);
-//   transition: fill 250ms linear;
-
-//   .modal-close-btn:hover &,
-//   .modal-close-btn:focus & {
-//     fill: var(--bg-btn-light);
-//   }
-// }
+  @include mq(desktop) {
+    width: 50%;
+  }
+}
 
 .modal-close-btn {
   position: absolute;
@@ -55,20 +29,245 @@
   height: 30px;
   stroke: $primary-color;
   background-color: inherit;
-  @include centeredFlex();
 }
 
-#my-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: 1000;
-  visibility: hidden;
-  pointer-events: none;
+.modal__title.section-subtitle {
+  text-align: center;
+  font-family: 'Titan One';
+  position: relative;
+  color: $accent-color;
+  font-size: 26px;
+  padding-bottom: 160px;
+  margin-bottom: 0;
+
+  @include mq(tablet) {
+    font-size: 36px;
+    padding-bottom: 230px;
+  }
 }
 
-#my-canvas.active {
-  visibility: visible;
+.modal--ice-cream .modal__title::after {
+  content: '';
+  width: 150px;
+  height: 150px;
+
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  background-image: url('../images/products/mobile/ice-cream-mobile-x1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('../images/products/mobile/ice-cream-mobile-x2.png');
+  }
+
+  @include mq(mobile) {
+    background-image: url('../images/products/tablet/ice-cream-tablet-x1.png');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/products/tablet/ice-cream-tablet-x2.png');
+    }
+  }
+
+  @include mq(tablet) {
+    width: 220px;
+    height: 226px;
+    transform: translate(-50%, -50%);
+    background-image: url('../images/products/tablet/ice-cream-tablet-x1.png');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/products/tablet/ice-cream-tablet-x2.png');
+    }
+  }
+
+  @include mq(desktop) {
+    width: 220px;
+    height: 220px;
+    background-image: url('../images/products/ice-cream-desktop-x1.png');
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/products/ice-cream-desktop-x2.png');
+    }
+  }
+}
+
+.modal--ice-coffee .modal__title::after {
+  content: '';
+  width: 150px;
+  height: 150px;
+
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  background-image: url('../images/products/mobile/ice-coffee-mobile-x1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('../images/products/mobile/ice-coffee-mobile-x2.png');
+  }
+
+  @include mq(mobile) {
+    background-image: url('../images/products/tablet/ice-coffee-tablet-x1.png');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/products/tablet/ice-coffee-tablet-x2.png');
+    }
+  }
+
+  @include mq(tablet) {
+    width: 220px;
+    height: 226px;
+    transform: translate(-50%, -50%);
+    background-image: url('../images/products/tablet/ice-coffee-tablet-x1.png');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/products/tablet/ice-coffee-tablet-x2.png');
+    }
+  }
+
+  @include mq(desktop) {
+    width: 220px;
+    height: 220px;
+    transform: translate(-50%, -50%);
+    background-image: url('../images/products/ice-coffee-desktop-x1.png');
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/products/ice-coffee-desktop-x2.png');
+    }
+  }
+}
+
+.modal--milkshakes .modal__title::after {
+  content: '';
+  width: 150px;
+  height: 150px;
+
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -35%);
+  background-image: url('../images/products/mobile/ice-milkshakes-mobile-x1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('../images/products/mobile/ice-milkshake-mobile-x2.png');
+  }
+
+  @include mq(mobile) {
+    background-image: url('../images/products/tablet/ice-milkshakes-tablet-x1.png');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/products/tablet/ice-milkshakes-tablet-x2.png');
+    }
+  }
+
+  @include mq(tablet) {
+    width: 220px;
+    height: 226px;
+    transform: translate(-50%, -45%);
+    background-image: url('../images/products/tablet/ice-milkshakes-tablet-x1.png');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/products/tablet/ice-milkshakes-tablet-x2.png');
+    }
+  }
+
+  @include mq(desktop) {
+    width: 220px;
+    height: 220px;
+    transform: translate(-50%, -45%);
+    background-image: url('../images/products/ice-milkshakes-desktop-x1.png');
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/products/ice-milkshakes-desktop-x1.png');
+    }
+  }
+}
+
+.modal__text {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $secondary-text-color;
+
+  @include mq(mobile) {
+    margin-bottom: 50px;
+    font-size: 16px;
+  }
+
+  @include mq(tablet) {
+    line-height: 1.79;
+    margin-bottom: 20px;
+  }
+  @include mq(desktop) {
+    font-size: 18px;
+    line-height: 1.75;
+    margin-bottom: 10px;
+  }
+}
+.modal__order-link {
+  width: 80px;
+  height: 40px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.btn-dark {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: $accent-color;
+  border: 0;
+  cursor: pointer;
+  color: $white-text-color;
+  transition: background-color 0.25s linear;
+}
+
+.modal__order-link {
+  width: 80px;
+  height: 40px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 16px;
 }

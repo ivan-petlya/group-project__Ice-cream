@@ -9,6 +9,7 @@
   background-color: rgba(255, 165, 186, 0.5);
   transition: opacity $main-effect, visibility $main-effect;
   opacity: 1;
+  overflow-y: scroll;
   pointer-events: auto;
   visibility: visible;
 }
@@ -20,9 +21,6 @@
 }
 
 .modal {
-  @media screen and (min-width: 480px) {
-    width: 450px;
-  }
   position: absolute;
   top: 50%;
   left: 50%;
@@ -36,6 +34,18 @@
   box-shadow: $contacts-shadow;
   transition: transform $main-effect;
   transform: translate(-50%, -50%) scale(1);
+
+  @include maxMedia($min) {
+    position: fixed;
+    min-width: 320px;
+  }
+  @include minMedia($tab) {
+    border-radius: 10px;
+    padding: 40px;
+    overflow: auto;
+    height: auto;
+    max-width: 640px;
+  }
 
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0.8);
@@ -63,11 +73,16 @@
 
 .modal-title {
   text-align: center;
-  @include fontButton($fs: 20px, $lh: 1.15);
+  @include fontTitle($fs: 16px, $lh: 1.31);
   color: $primary-color;
   margin-bottom: 12px;
 
+  @include minMedia($tab) {
+    font-size: 26px;
+    line-height: calc(30 / 26);
+  }
   @include minMedia($desk) {
+    font-size: 30px;
     line-height: calc(30 / 20);
   }
 }
