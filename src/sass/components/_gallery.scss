@@ -195,20 +195,18 @@
 // }
 
 .gallery__container {
-    width: 320px;
+    width: 100vw;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
+    
+    background-image: linear-gradient(to bottom, $primary-bg-color 29px, $bg-color 29px, $bg-color 136px);
 
     @include mq(tablet) {
-        width: 768px;
-        height: auto;
+        background-image: linear-gradient(to bottom, $primary-bg-color 188px, $bg-color 188px, $bg-color 327px);
     }
     @include mq(desktop) {
-        width: 1200px;
-        height: auto;
         padding-left: 93px;
         padding-right: 93px;
+        background-image: linear-gradient(to bottom, $primary-bg-color 89px, $bg-color 89px, $bg-color 432px);
     }
 }
 
@@ -217,16 +215,18 @@
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(9, 1fr);
     gap: 2.53px;
-    margin-top: -27px;
-    justify-items: stretch;
+
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
 
     @include mq(tablet) {
         gap: 6.05px;
-        margin-top: -188px;
+        width: 768px;
     }
     @include mq(desktop) {
         gap: 8px;
-        margin-top: -89px;
+        width: 1014px;
     }
 }
 
@@ -242,7 +242,6 @@
         z-index: 1;
         cursor: pointer;
     }
-    
     @include mq(tablet) {
         border-radius: 20px;
     }

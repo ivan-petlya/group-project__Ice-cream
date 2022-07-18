@@ -42,8 +42,8 @@
           class="button header-menu"
           aria-expanded="false"
           type="button"
-          data-menu-open
-        id="hamburger">
+          id="hamburger"
+        >
           <svg class="" width="20" height="12">
             <use
               class=""
@@ -95,7 +95,7 @@
           eiusmod tempor incididunt ut labore et
         </p>
 
-        <a class="link button-arrow" href="#advantage-gallery">
+        <a class="link button-arrow" href="#gallery">
           <svg class="icon-arrow">
             <use
               class=""
@@ -118,7 +118,7 @@
             ./images/hero-header/ellipse.png    1x,
             ./images/hero-header/ellipse@2x.png 2x
           "
-          media="(max-width: 768px)"
+          media="(max-width: 1199px)"
         />
         <source
           srcset="
@@ -127,7 +127,7 @@
           "
           media="(min-width: 1200px)"
         />
-        <img src="./images/hero-header/ellipse_m.png" alt="ellipse" />
+        <img src="./images/hero-header/ellipse_d.png" alt="ellipse" />
       </picture>
 
       <picture class="pic-ice-cream">
@@ -158,7 +158,7 @@
         />
       </picture>
 
-      <picture class="pic-milk animate__animated animate__flipInY">
+      <picture class="pic-milk">
         <source
           srcset="
             ./images/hero-header/milk-pic_t.png    1x,
@@ -176,7 +176,7 @@
         <img src="./images/hero-header/milk-pic_d.png" alt="milk" />
       </picture>
 
-      <picture class="pic-girl animate__animated animate__flipInY">
+      <picture class="pic-girl">
         <source
           srcset="
             ./images/hero-header/girl-pic_t.png    1x,
@@ -195,9 +195,9 @@
       </picture>
     </div>
     <div class="mob-menu is-hidden">
-      <button type="button" class="menu-close">
+      <button type="button" class="menu-close" mob-data-modal-open>
         <svg class="menu-close-icon">
-          <use href="./images/sprite.svg#icon-close">x</use>
+          <use href="./images/sprite.svg#icon-close-menu"></use>
         </svg>
       </button>
       <button type="button" class="mob-menu-button">

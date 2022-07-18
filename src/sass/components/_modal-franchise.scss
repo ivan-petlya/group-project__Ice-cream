@@ -2,29 +2,32 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80vw;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 40px;
+  width: 95vw;
   max-width: 320px;
   max-height: 90vh;
-  background-color: #fff5f6;
-  padding: 35px 25px 20px 25px;
+  overflow-y: scroll;
+  background-color: $primary-bg-color;
   display: block;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  overflow-y: auto;
+  box-shadow: $contacts-shadow;
   transition: transform $main-effect;
   transform: translate(-50%, -50%) scale(1);
 
-  @include mq(tablet) {
-    width: 80vw;
-    max-width: 500px;
+  @include maxMedia($min) {
+    position: fixed;
+    min-width: 320px;
   }
-
-  @include mq(desktop) {
-    width: 700px;
+  @include minMedia($tab) {
+    border-radius: 10px;
+    padding: 40px;
+    overflow: auto;
+    height: auto;
+    max-width: 640px;
   }
 }
+
 .modal__franchise-close.btn-dark {
   position: absolute;
   top: 8px;
