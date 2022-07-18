@@ -1,0 +1,45 @@
+.modal__franchise {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  max-width: 320px;
+  max-height: 90vh;
+  background-color: #fff5f6;
+  padding: 35px 25px 20px 25px;
+  display: block;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow-y: auto;
+  transition: transform $main-effect;
+  transform: translate(-50%, -50%) scale(1);
+
+  @include mq(tablet) {
+    width: 80vw;
+    max-width: 500px;
+  }
+
+  @include mq(desktop) {
+    width: 700px;
+  }
+}
+.modal__franchise-close.btn-dark {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+}
+
+.modal__franchise-form {
+  display: inherit;
+  font-size: 13px;
+
+  @include mq(tablet) {
+    font-size: 14px;
+  }
+
+  @include mq(desktop) {
+    font-size: 16px;
+  }
+}

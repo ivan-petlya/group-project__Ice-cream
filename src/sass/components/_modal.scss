@@ -11,9 +11,6 @@
   opacity: 1;
   pointer-events: auto;
   visibility: visible;
-  &--dark {
-    background-color: rgba(255, 165, 186, 0.8);
-  }
 }
 .is-hidden {
   opacity: 0;
@@ -23,15 +20,17 @@
 }
 
 .modal {
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
   position: absolute;
   top: 50%;
   left: 50%;
+  border-radius: 5px;
   margin: 0 auto;
   padding: 40px;
-  max-width: 450px;
   width: 95vw;
-  max-height: 652px;
-  max-height: 100vh;
+  height: 550px;
   overflow: scroll;
   background-color: $primary-bg-color;
   box-shadow: $contacts-shadow;
@@ -41,22 +40,6 @@
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0.8);
     transition: transform $main-effect;
-  }
-
-  @include maxMedia($min) {
-    width: 100%;
-    position: fixed;
-    min-width: 320px;
-  }
-  @include minMedia($tab) {
-    border-radius: 10px;
-    overflow: auto;
-    // overflow: unset;
-    height: auto;
-  }
-  @include minMedia($desk) {
-    max-width: 528px;
-    // max-height: 664px;
   }
 }
 .modal-close {
@@ -68,8 +51,6 @@
   stroke: $primary-color;
   background-color: inherit;
   @include centeredFlex();
-  // flex-direction: column;
-  // border: none;
 }
 .modal-icon {
   transition: stroke $main-effect, transform $main-effect;
@@ -193,6 +174,9 @@
     box-shadow: none;
     transition: border $main-effect, background-color $main-effect,
       box-shadow $main-effect;
+  }
+  .form-policy-check:focus + & {
+    border: 1px solid $primary-color;
   }
 }
 
