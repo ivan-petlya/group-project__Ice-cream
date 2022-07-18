@@ -1,8 +1,12 @@
 .section-about {
-  padding-top: 125px;
-  padding-bottom: 20px;
-
-  background-color: rgb(255, 245, 246);
+    padding-top: 125px;
+    padding-bottom: 20px;
+  
+    // background-color: rgb(255, 245, 246);
+  background-color:$secondary-bg-color;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0px 720px;
 
   background-repeat: no-repeat;
   background-size: contain;
@@ -59,24 +63,25 @@
   @include mq(tablet) {
     font-size: 48px;
   }
+  .label {
+    margin-bottom: 15px;
+    color:$secondary-title-color;
 
-  @include mq(desktop) {
-    font-size: 58px;
-  }
-}
-.label {
-  margin-bottom: 15px;
-  color: #ffa5ba;
-
-  font-family: 'Titan One', cursive;
-  font-size: 18px;
-  line-height: 1.16;
-  text-align: center;
-  text-transform: uppercase;
-
-  @include mq(tablet) {
-    font-size: 26px;
-    line-height: 1.15;
+    font-family: 'Titan One', cursive;
+    font-size: 18px;
+    line-height: 1.16;
+    text-align: center;
+    text-transform: uppercase;
+  
+    @include mq(tablet) {
+      font-size: 26px;
+      line-height: 1.15;
+    }
+  
+    @include mq(desktop) {
+      font-size: 30px;
+      line-height: 1.13;
+    }
   }
 
   @include mq(desktop) {
