@@ -198,15 +198,15 @@
     width: 100vw;
     height: auto;
     
-    background-image: linear-gradient(to bottom, $primary-bg-color 29px, $bg-color 107px);
+    background-image: linear-gradient(to bottom, $primary-bg-color 29px, $bg-color 29px, $bg-color 136px);
 
     @include mq(tablet) {
-        background-image: linear-gradient(to bottom, $primary-bg-color 188px, $bg-color 139px);
+        background-image: linear-gradient(to bottom, $primary-bg-color 188px, $bg-color 188px, $bg-color 327px);
     }
     @include mq(desktop) {
         padding-left: 93px;
         padding-right: 93px;
-        background-image: linear-gradient(to bottom, $primary-bg-color 87px, $bg-color 343px);
+        background-image: linear-gradient(to bottom, $primary-bg-color 89px, $bg-color 89px, $bg-color 432px);
     }
 }
 
