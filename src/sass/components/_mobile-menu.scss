@@ -24,7 +24,7 @@
   right: 0;
   width: 250px;
   height: 100vh;
-  z-index: 1;
+  z-index: 10;
   transition: $transition;
   padding-top: 60px;
   @include mq(tablet) {
