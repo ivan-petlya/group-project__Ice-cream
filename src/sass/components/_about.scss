@@ -2,8 +2,8 @@
     padding-top: 125px;
     padding-bottom: 20px;
   
-    background-color: rgb(255, 245, 246);
-  
+    // background-color: rgb(255, 245, 246);
+  background-color:$secondary-bg-color;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 0px 720px;
@@ -67,7 +67,7 @@
   }
   .label {
     margin-bottom: 15px;
-    color:#FFA5BA;
+    color:$secondary-title-color;
 
     font-family: 'Titan One', cursive;
     font-size: 18px;
