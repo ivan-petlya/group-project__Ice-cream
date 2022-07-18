@@ -242,10 +242,6 @@
         z-index: 1;
         cursor: pointer;
     }
-    
-    @include mq(tablet) {
-        border-radius: 20px;
-    }
 }
 
 .gallery__item1 {
