@@ -235,9 +235,11 @@
   border-radius: 50%;
   background-color: white;
   cursor: pointer;
+  transition: $main-effect;
   &:hover,
   &:focus {
     background: #d41443;
+    box-shadow: 0px 10px 13px -7px #933e3e, 0px 5px 31px 9px rgba(229, 84, 84, 0.35);
     .products-list__icon {
       color: white;
     }

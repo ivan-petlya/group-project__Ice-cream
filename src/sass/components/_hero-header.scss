@@ -1,3 +1,8 @@
+body,
+html {
+  scroll-behavior: smooth;
+}
+
 .header {
   background-color: $third-bg-color;
 }
@@ -71,6 +76,7 @@
   font-size: 16px;
   line-height: 1.31;
   color: $white-text-color;
+  transition: $main-effect;
 
   &--current {
     color: $accent-color;
