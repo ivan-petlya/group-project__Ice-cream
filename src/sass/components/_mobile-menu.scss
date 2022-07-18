@@ -11,7 +11,7 @@
   position: absolute;
   top: 17px;
   right: 17px;
-  z-index: 10;
+  z-index: 999;
   cursor: pointer;
   @include mq(desktop) {
     right: 34px;
@@ -89,6 +89,17 @@
   @include mq(desktop) {
     padding-left: 24px;
   }
+}
+.mob-menu__link:focus,
+.mob-menu__link:hover {
+  color: $accent-color;
+}
+.mob-button-icon__icon {
+  width: 6px;
+  height: 10px;
+  margin-left: 12px;
+  fill: none;
+  stroke: $primary-color;
 }
 .current {
   color: $accent-color;
