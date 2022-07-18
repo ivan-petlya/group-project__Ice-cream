@@ -24,8 +24,9 @@
 
   // Размер  от 1200px
   @media (min-width: 1200px) {
-    background-position: 0px 370px;
+    background-position: 50%;
     background-image: url('../images/about/milk-d.png');
+    // margin: 0 auto;
 
     // Размер  от 1200px retina
     @media (min-device-pixel-ratio: 2),
