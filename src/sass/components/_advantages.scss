@@ -1,15 +1,15 @@
 .advantages {
     padding-top: 20px;
-    padding-bottom: 60px;
+    padding-bottom: 58px;
     background-color: #FFF5F6;
 
     @include mq(tablet) {
-        padding-bottom: 251px;
+        padding-bottom: 31px;
     }
 
     @include mq(desktop)  {
         padding-top: 40px;
-        padding-bottom: 209px;
+        padding-bottom: 89px;
     }
 }
 

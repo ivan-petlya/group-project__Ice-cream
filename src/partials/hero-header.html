@@ -42,8 +42,7 @@
           class="button header-menu"
           aria-expanded="false"
           type="button"
-          data-menu-open
-        id="hamburger">
+          data-menu-open>
           <svg class="" width="20" height="12">
             <use
               class=""
@@ -122,10 +121,10 @@
         />
         <source
           srcset="
-            ./images/hero-header/ellipse_d.png    1x,
-            ./images/hero-header/ellipse_d@2x.png 2x
+            ./images/hero-header/ellipse.png    1x,
+            ./images/hero-header/ellipse@2x.png 2x
           "
-          media="(min-width: 1200px)"
+          media="(min-width: 769px)"
         />
         <img src="./images/hero-header/ellipse_m.png" alt="ellipse" />
       </picture>
@@ -200,7 +199,7 @@
           <use href="./images/sprite.svg#icon-close">x</use>
         </svg>
       </button>
-      <button type="button" class="mob-menu-button">
+      <button type="button" class="mob-menu-button" data-modal-open>
         Buy now
         <svg class="mob-button-icon">
           <use href="./images/sprite.svg#icon-bracket"></use>
@@ -208,7 +207,7 @@
       </button>
       <ul class="list menu-list">
         <li class="menu-list__item">
-          <a class="link menu-list__link curent" href="#header">Home</a>
+          <a class="link menu-list__link current" href="#header">Home</a>
         </li>
         <li class="menu-list__item">
           <a class="link menu-list__link" href="#about-us">About us</a>
