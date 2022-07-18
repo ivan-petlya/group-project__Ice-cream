@@ -21,22 +21,41 @@
 }
 
 .modal {
-  @media screen and (min-width: 480px) {
-    width: 450px;
-  }
   position: absolute;
-  top: 70%;
+  top: 50%;
   left: 50%;
   border-radius: 5px;
   margin: 0 auto;
   padding: 40px;
   width: 95vw;
-  // height: 550px;
+  max-width: 320px;
+  max-height: 90vh;
   overflow: scroll;
   background-color: $primary-bg-color;
   box-shadow: $contacts-shadow;
   transition: transform $main-effect;
   transform: translate(-50%, -50%) scale(1);
+
+  @include maxMedia($min) {
+    position: fixed;
+    min-width: 320px;
+  }
+  @include minMedia($tab) {
+    border-radius: 10px;
+    padding: 40px;
+    overflow: auto;
+    height: auto;
+    max-width: 640px;
+  }
+
+  // @include mq(tablet) {
+  //   width: 80vw;
+  //   max-width: 500px;
+  // }
+
+  // @include mq(desktop) {
+  //   width: 700px;
+  // }
 
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0.8);
