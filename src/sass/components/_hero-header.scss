@@ -131,11 +131,13 @@
   &:focus {
     top: 2px;
     background-color: $button-hover-color;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 
   &:active {
-    box-shadow: inset 0px 3px 1px rgba(0, 0, 0, 0.1), inset 0px 1px 2px rgba(0, 0, 0, 0.08),
+    box-shadow: inset 0px 3px 1px rgba(0, 0, 0, 0.1),
+      inset 0px 1px 2px rgba(0, 0, 0, 0.08),
       inset 0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 }
@@ -146,7 +148,7 @@
   width: 218px;
   margin-bottom: 19px;
 
-  font-family: "Titan One", cursive;
+  font-family: 'Titan One', cursive;
 
   @include mq(tablet) {
     width: 162px;
@@ -252,11 +254,13 @@
   &:focus {
     top: 2px;
     background-color: $secondary-accent-color;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 
   &:active {
-    box-shadow: inset 0px 3px 1px rgba(0, 0, 0, 0.1), inset 0px 1px 2px rgba(0, 0, 0, 0.08),
+    box-shadow: inset 0px 3px 1px rgba(0, 0, 0, 0.1),
+      inset 0px 1px 2px rgba(0, 0, 0, 0.08),
       inset 0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 }
@@ -291,11 +295,13 @@
   &:focus {
     top: 2px;
     background-color: #ecebeb;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 
   &:active {
-    box-shadow: inset 0px 3px 1px rgba(0, 0, 0, 0.1), inset 0px 1px 2px rgba(0, 0, 0, 0.08),
+    box-shadow: inset 0px 3px 1px rgba(0, 0, 0, 0.1),
+      inset 0px 1px 2px rgba(0, 0, 0, 0.08),
       inset 0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 }
@@ -359,7 +365,7 @@
   @include mq(tablet) {
     z-index: 1;
 
-    font-family: "Titan One", cursive;
+    font-family: 'Titan One', cursive;
     font-style: normal;
     font-weight: normal;
     font-size: 28px;
@@ -458,11 +464,13 @@
     &:focus {
       top: 2px;
       background-color: $button-hover-color;
-      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     }
 
     &:active {
-      box-shadow: inset 0px 3px 1px rgba(0, 0, 0, 0.1), inset 0px 1px 2px rgba(0, 0, 0, 0.08),
+      box-shadow: inset 0px 3px 1px rgba(0, 0, 0, 0.1),
+        inset 0px 1px 2px rgba(0, 0, 0, 0.08),
         inset 0px 2px 2px rgba(0, 0, 0, 0.12);
     }
   }
