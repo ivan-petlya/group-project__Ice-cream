@@ -4,14 +4,14 @@
   visibility: hidden;
 }
 .menu-close-icon {
-  width: 14px;
-  height: 14px;
+  width: 30px;
+  height: 30px;
   color: $white-text-color;
   fill: currentColor;
   position: absolute;
   right: 28px;
   top: 23px;
-  z-index: 999;
+  z-index: 10;
   cursor: pointer;
   @include mq(desktop) {
     right: 34px;
