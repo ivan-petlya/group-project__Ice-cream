@@ -85,8 +85,6 @@
 .header-menu {
   margin-left: auto;
   background-color: initial;
-  // for mobile hamburger це врємєнно
-  z-index: 4;
   cursor: pointer;
 
   @include mq(tablet) {
