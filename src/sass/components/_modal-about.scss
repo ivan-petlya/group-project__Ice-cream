@@ -1,27 +1,6 @@
-.backdrop {
-  position: fixed;
-  min-width: 320px;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  width: 95vw;
-  height: 95vh;
-  background-color: rgba(255, 165, 186, 0.5);
-  transition: opacity $main-effect, visibility $main-effect;
-  opacity: 1;
-  pointer-events: auto;
-  visibility: visible;
-}
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-  transition: all $main-effect;
-}
-
 .modal-about {
-  @media screen and (min-width: 480px) {
-    width: 450px;
+  @media screen and (min-width: 320px) {
+    width: 300px;
   }
   position: absolute;
   top: 50%;
