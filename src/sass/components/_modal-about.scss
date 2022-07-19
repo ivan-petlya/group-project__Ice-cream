@@ -1,12 +1,13 @@
 .modal-about {
   position: absolute;
+  width: 80vw;
   top: 50%;
   left: 50%;
   border-radius: 5px;
-  margin: 0 auto;
+  // margin: 0 auto;
   padding: 40px;
-  width: 95vw;
-  height: auto;
+
+  // height: auto;
   overflow: scroll;
   background-color: $primary-bg-color;
   box-shadow: $contacts-shadow;
@@ -16,6 +17,7 @@
   @include maxMedia($min) {
     position: fixed;
     min-width: 320px;
+    width: 95vw;
   }
   @include minMedia($tab) {
     border-radius: 10px;
@@ -23,6 +25,7 @@
     overflow: auto;
     height: auto;
     max-width: 640px;
+    width: 95vw;
   }
 
   .backdrop.is-hidden & {
