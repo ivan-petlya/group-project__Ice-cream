@@ -2,6 +2,13 @@
 .footer{
     background-color:$secondary-bg-color;
     padding-bottom: 3px;
+    @include mq(tablet) {
+         padding-bottom: 8px;
+        
+    }
+    @include mq(desktop) {
+        padding-bottom: 4px; 
+    }
 }
 
 .footer .container{
@@ -18,10 +25,12 @@
     @include mq(tablet) {
         display: flex;
         flex-direction: row;
-        padding-bottom: 59px;   
+        margin-bottom: 40px;
+        
     }
     @include mq(desktop) {
-        padding-bottom: 0px;   
+        margin-bottom: 60px;
+        //padding-bottom: 0px;   
     }
 }
 
@@ -29,9 +38,11 @@
     flex-direction: column;
     display: flex;
     color: $accent-color;
-    padding-bottom: 40px;
+  
+    margin-bottom: 40px;
     @include mq(tablet){
-        padding-bottom: 0px;   
+      
+        margin-bottom: 0px;   
         width: 340px;
     }
     @include mq(tablet) {
@@ -81,30 +92,32 @@
         font-size: 48px;
         line-height: 1.15;
         letter-spacing: 0.06em;
-       padding-bottom: 40px;
     }
+
     @include mq(desktop) {
         font-size: 58px;
         line-height: 1.13;
         width: auto;
         height: auto;
-        padding-bottom: 60px; 
+        padding-bottom: 0px; 
     }
 }
 
 .footer_contact{
     text-align: end;
     flex-direction: column;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
+
     @include mq(tablet) {
-        padding-top: 40px;
-        padding-bottom: 0px;   
-        padding-left: 128px;
+        padding-top: 60px;
+        margin-bottom: 0px;   
+        margin-left: 128px;
+        
     }
     @include mq(desktop) {
-       padding-left: 375px;
+
        padding-top: 6px;
-       //padding-bottom: 60px;
+       margin-left: 375px;
        
     }
 }
@@ -113,7 +126,8 @@
     display: flex;
     margin: 0;
     justify-content: right;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
+    
 }
 
 .footer_soc_item{
@@ -164,7 +178,7 @@
 }
 .tel{
     @include mq(desktop) {
-        padding-bottom: 60px;
+        padding-bottom: 00px;
     }
    
 }
@@ -229,7 +243,7 @@
     }
     @include mq(desktop) {
         letter-spacing: 0.02em;  
-        padding-top: 7px;
+        padding-top: 7px;  
     }
 }
     
