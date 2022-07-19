@@ -29,6 +29,7 @@
   padding: 40px;
   width: 95vw;
   height: auto;
+  max-width: 450px;
   overflow: scroll;
   background-color: $primary-bg-color;
   box-shadow: $contacts-shadow;
@@ -44,7 +45,7 @@
     padding: 40px;
     overflow: auto;
     height: auto;
-    max-width: 640px;
+    // max-width: 640px;
   }
 
   .backdrop.is-hidden & {

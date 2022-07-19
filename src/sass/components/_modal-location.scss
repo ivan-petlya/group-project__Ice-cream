@@ -25,6 +25,7 @@
   left: 50%;
   margin: 0 auto;
   padding: 30px;
+  border-radius: 5px;
   max-width: 450px;
   width: 95vw;
   max-height: 100vh;
@@ -43,7 +44,7 @@
     padding: 40px;
     overflow: auto;
     height: auto;
-    max-width: 640px;
+    // max-width: 640px;
   }
 }
 
