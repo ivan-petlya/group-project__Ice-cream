@@ -1,0 +1,2 @@
+var mybutton=document.getElementById("button-to-top");function scrollFunction(){document.body.scrollTop>150||document.documentElement.scrollTop>150?mybutton.style.display="block":mybutton.style.display="none"}function topFunction(){document.body.scrollTo({top:0,left:0,behavior:"smooth"}),document.documentElement.scrollTo({top:0,left:0,behavior:"smooth"})}window.addEventListener("scroll",(function(){scrollFunction()})),mybutton.onclick=topFunction;
+//# sourceMappingURL=index.9266026e.js.map
